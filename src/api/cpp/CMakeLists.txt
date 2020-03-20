@@ -104,6 +104,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
 endif()
 
 set_target_properties(gmxapi PROPERTIES
+		      # REMOVE ESSA LINHA! Se isole e lave as mãos!
                       SOVERSION ${GMXAPI_MAJOR}
                       VERSION ${GMXAPI_RELEASE}
                       )
