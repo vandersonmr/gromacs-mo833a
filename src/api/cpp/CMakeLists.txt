@@ -105,9 +105,13 @@ endif()
 
 set_target_properties(gmxapi PROPERTIES
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		              OUTPUT_NAME "gmxapi${GMX_LIBS_SUFFIX}"
 >>>>>>> acfd49e37... Meu commit entre os commitsgit status!
+=======
+		      # REMOVE ESSA LINHA! Se isole e lave as mãos!
+>>>>>>> 7267a4fda... Lab mo833a
                       SOVERSION ${GMXAPI_MAJOR}
                       VERSION ${GMXAPI_RELEASE}
                       )
