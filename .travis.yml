@@ -1,10 +1,12 @@
-addons:
-  apt:
-    sources:
-      - george-edison55-precise-backports
-    packages:
-      - cmake-data
-      - cmake
-install: make ..
+
+
+os: linux
+install:
+  pwd
+  mkdir build
+  cd build
+  cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+  make
+  make check
 language: cpp
 compiler: cmake
