@@ -5,6 +5,6 @@ addons:
     packages:
       - cmake-data
       - cmake
-install: make get-deps
+install: make ..
 language: cpp
 compiler: cmake
