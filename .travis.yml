@@ -1,5 +1,1 @@
 language: cpp
-sudo: true
-compiler: gcc
-dist: xenial
-os: linux
