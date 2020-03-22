@@ -2,11 +2,11 @@
 
 os: linux
 install:
-  pwd
-  mkdir build
-  cd build
-  cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
-  make
-  make check
+  pwd \\
+  mkdir build \\
+  cd build \\
+  cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON \\
+  make \\
+  make check 
 language: cpp
 compiler: cmake
