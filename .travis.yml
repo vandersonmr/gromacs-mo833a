@@ -8,6 +8,6 @@ script:
   - cd build
   - cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
   # Build GROMACS
-  - make
+  - make -j 2
   # Test the built binaries
-  - make check
+  - make check -j 2
