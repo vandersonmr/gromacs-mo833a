@@ -3,5 +3,6 @@ language: cpp
 script:
   - mkdir -p build
   - cd build
-  - cmake ..
-  - make
+  - cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+  - make -j
+  - make check
