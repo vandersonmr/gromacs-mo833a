@@ -1,0 +1,13 @@
+language: cpp
+dist: bionic
+compiler: gcc
+os: linux
+script:
+  # Configure the make environment with CMake
+  - mkdir build
+  - cd build
+  - cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+  # Build GROMACS
+  - make
+  # Test the built binaries
+  - make check
