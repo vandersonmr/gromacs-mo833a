@@ -1,13 +1,13 @@
-language: cpp
+# language: cpp
 
-before_install:
- - echo "yes" | sudo add-apt-repository ppa:kalakris/cmake #https://github.com/travis-ci/travis-ci/issues/2212
- - sudo apt-get install libfftw3-dev libopenmpi-dev libx11-dev zlib1g-dev libgsl0-dev libxml2-dev libblas-dev liblapack-dev libboost-dev cmake
+# before_install:
+#  - echo "yes" | sudo add-apt-repository ppa:kalakris/cmake #https://github.com/travis-ci/travis-ci/issues/2212
+#  - sudo apt-get install libfftw3-dev libopenmpi-dev libx11-dev zlib1g-dev libgsl0-dev libxml2-dev libblas-dev liblapack-dev libboost-dev cmake
 
-script: 
-  - mkdir build && pushd build && cmake -DGMX_DOUBLE=$GMX_DOUBLE -DGMX_MPI=$GMX_MPI .. && make -j4
+# script: 
+#   - mkdir build && pushd build && cmake -DGMX_DOUBLE=$GMX_DOUBLE -DGMX_MPI=$GMX_MPI .. && make -j4
 
 compiler:
-  - clang
-  - gcc
+  # - clang
+  # - gcc
   - cmake
