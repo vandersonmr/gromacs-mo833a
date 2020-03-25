@@ -153,7 +153,7 @@ install(
     ${CMAKE_CURRENT_BINARY_DIR}/cmake/gmxapi-config.cmake
     DESTINATION share/cmake/gmxapi/
 )
-
+ 
 # We need a CMake target to provide the internal interface(s) of the gmxapi
 # library implementation.
 add_library(gmxapi-detail INTERFACE)
