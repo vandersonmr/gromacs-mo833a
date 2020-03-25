@@ -7,6 +7,10 @@ language: cpp
 # script: 
   # - mkdir build && pushd build && cmake -DGMX_DOUBLE=$GMX_DOUBLE -DGMX_MPI=$GMX_MPI .. && make -j4
 
+script:
+  - mkdir build
+  - cd build
+
 compiler:
   - clang
   - gcc
