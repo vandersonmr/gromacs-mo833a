@@ -104,6 +104,10 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
 endif()
 
 set_target_properties(gmxapi PROPERTIES
+<<<<<<< HEAD
+=======
+		              OUTPUT_NAME "gmxapi${GMX_LIBS_SUFFIX}"
+>>>>>>> acfd49e37... Meu commit entre os commitsgit status!
                       SOVERSION ${GMXAPI_MAJOR}
                       VERSION ${GMXAPI_RELEASE}
                       )
