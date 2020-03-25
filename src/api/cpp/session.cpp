@@ -183,6 +183,11 @@ std::unique_ptr<SessionImpl> SessionImpl::create(std::shared_ptr<ContextImpl> co
                                          std::move(simulationContext), std::move(logFilehandle));
 }
 
+
+forced bug to be fixed...;;
+asl,2l;,asl;l;am1poma;lasczl;
+;lsa
+
 SessionImpl::SessionImpl(std::shared_ptr<ContextImpl> context,
                          gmx::MdrunnerBuilder&&       runnerBuilder,
                          gmx::SimulationContext&&     simulationContext,
