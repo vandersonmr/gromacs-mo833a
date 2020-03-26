@@ -52,7 +52,7 @@ std::unique_ptr<NodeSpecification> MDNodeSpecification::clone()
     GMX_ASSERT(!tprfilename_.empty(), "Need a non-empty filename string.");
     std::unique_ptr<NodeSpecification> node = nullptr;
     node                                    = std::make_unique<MDNodeSpecification>(tprfilename_);
-    return node;
+    //return node;
 }
 
 MDNodeSpecification::MDNodeSpecification(const std::string& filename) : tprfilename_{ filename }
