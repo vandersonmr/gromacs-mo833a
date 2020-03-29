@@ -4,11 +4,12 @@ compiler:
   - gcc
 
 before_script:
-  - sudo apt-get install -y fftw3
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
 
 script:
-  - make
-  - make check
+  # Build GROMACS
+  - make -j4
+  # Test
+  - make check -j4
