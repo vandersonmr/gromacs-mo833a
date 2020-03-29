@@ -1,0 +1,14 @@
+language: cpp
+
+compiler:
+  - gcc
+
+before_script:
+  - sudo apt-get install -y fftw3
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script:
+  - make
+  - make check
