@@ -1,4 +1,4 @@
-image:https://travis-ci.org/rodrigorusa/gromacs-mo833a.svg?branch=rodrigo["Build Status", link="https://travis-ci.org/rodrigorusa/gromacs-mo833a"]
+[![Build Status](https://travis-ci.org/rodrigorusa/gromacs-mo833a.svg?branch=rodrigo)](https://travis-ci.org/rodrigorusa/gromacs-mo833a)
 
                Welcome to the official version of GROMACS!
 
