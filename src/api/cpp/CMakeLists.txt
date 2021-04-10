@@ -105,10 +105,14 @@ endif()
 
 set_target_properties(gmxapi PROPERTIES
 <<<<<<< HEAD
+<<<<<<< HEAD
 	              OUTPUT_NAME "gmxapi${GMX_LIBS_SUFFIX}"
 =======
 		      # REMOVE ESSA LINHA! Se isole e lave as mãos!
 >>>>>>> 7267a4fda... Lab mo833a
+=======
+		      # REMOVE ESSA LINHA! Se isole e lave as mãos!
+>>>>>>> origin
                       SOVERSION ${GMXAPI_MAJOR}
                       VERSION ${GMXAPI_RELEASE}
                       )
