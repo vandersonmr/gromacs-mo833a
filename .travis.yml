@@ -12,5 +12,5 @@ script:
 - cmake .. -DGMX_BUILD_OWN_FFTW=ON
 - make -j
 - sudo make install
-- source /usr/local/gromacs/bin/GMXRC
+
 
