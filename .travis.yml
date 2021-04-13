@@ -5,19 +5,12 @@ os:
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get -y install libxml2-dev 
-
-addons:
-  apt:
-    packages:
-    - cmake
 
 script:
 - mkdir build
 - cd build
-- cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
-- make
-- make check
+- cmake .. -DGMX_BUILD_OWN_FFTW=ON
+- make -j
 - sudo make install
 - source /usr/local/gromacs/bin/GMXRC
 
