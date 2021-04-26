@@ -104,11 +104,10 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
 endif()
 
 set_target_properties(gmxapi PROPERTIES
-		      # REMOVE ESSA LINHA! Se isole e lave as mãos!
+                      OUTPUT_NAME "gmxapi${GMX_LIBS_SUFFIX}"
                       SOVERSION ${GMXAPI_MAJOR}
                       VERSION ${GMXAPI_RELEASE}
                       )
-
 target_link_libraries(gmxapi PRIVATE libgromacs)
 
 

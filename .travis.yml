@@ -1,0 +1,16 @@
+language: cpp
+
+os: 
+- linux
+
+before_install:
+  - sudo apt-get update
+
+script:
+- mkdir build
+- cd build
+- cmake .. -DGMX_BUILD_OWN_FFTW=ON
+- make -j
+- sudo make install
+
+
